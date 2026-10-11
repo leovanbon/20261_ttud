@@ -24,7 +24,7 @@ fn dfs(u: &str, tree: &HashMap<String, Vec<String>>, memo: &mut HashMap<String, 
 
 fn main() {
     let mut input = String::new();
-    io::stdin().read_to_string(&mut input).unwrap();
+    io::stdin().read_to_string(&mut input).unwrap(); //use ctrl+D to send EOF
     let mut it = input.split_whitespace();
 
     let mut tree: HashMap<String, Vec<String>> = HashMap::new();
